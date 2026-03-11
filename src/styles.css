@@ -1,0 +1,36 @@
+/* Custom styles for to-do list app */
+
+body {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Strikethrough styling for completed tasks */
+.todo-completed {
+  text-decoration: line-through !important;
+  color: var(--bs-secondary-color) !important;
+}
+
+/* Make form inputs and buttons more touch-friendly on mobile */
+@media (max-width: 767.98px) {
+  .form-control,
+  .btn {
+    min-height: 48px;
+  }
+}
+
+/* Improve tap targets for checkboxes */
+.form-check-input {
+  cursor: pointer;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.list-group-item {
+  min-height: 56px;
+  padding: 0.75rem 1rem;
+}
